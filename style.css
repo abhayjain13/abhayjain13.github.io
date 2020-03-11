@@ -132,3 +132,66 @@ footer > a:hover {
   border-bottom: 2px solid #e96e35;
 }
 /* Footer CSS END */
+
+/* Media Query START */
+
+@media only screen and (max-width: 700px) {
+  body {
+    width: 340px;
+    min-width: 340px;
+    height: auto;
+    padding: 4%;
+  }
+
+  header {
+    display: block;
+    padding: 0;
+  }
+
+  header > div:first-child {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  header > div:last-child {
+    display: flex;
+    font-size: 16px;
+  }
+
+  header > div:last-child > span {
+    min-width: 77px;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    line-height: 1.6;
+    height: auto;
+  }
+
+  section > div {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  section > .image {
+    margin: 4% 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 4%;
+    padding-top: 4%;
+    border-top: 1px solid #e96e35;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Media Query END */
