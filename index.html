@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhay Jain | Software Engineer</title>
+    <link rel="shortcut icon" href="user.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div onclick="display('home')">A<span>J</span></div>
+      <div>
+        <span onclick="display('about')">About Me</span>
+        <span onclick="display('profession')">Profession</span>
+        <span onclick="display('contact')">Contact</span>
+      </div>
+    </header>
+    <section>
+      <div id="home">
+        Hello, I am
+        <div class="name">Abhay <span class="coloured">Jain</span>.</div>
+        Full stack Web Developer, I have serious passion for
+        <span class="coloured">UI effects</span>,<span class="coloured"
+          >dynamic user experiences</span
+        >, <span class="coloured">animations</span> and
+        <span class="coloured">creating intuitive</span>.
+      </div>
+      <div id="about">
+        I am very <span class="coloured">motivated</span> and love doing what I
+        do. I enjoy <span class="coloured">sharing</span> things and
+        <span class="coloured">talking</span> to people about variety of things.
+        I have a quick <span class="coloured">wit</span> and love to laugh about
+        everything under the sun. I am fun loving, but serious when necessary.
+        And I love playing <span class="coloured">Cricket</span>.
+      </div>
+      <div id="profession">
+        I am <span class="coloured">Full Stack Web Developer</span>, having good
+        understanding of <span class="coloured">Designing</span> that integrates
+        with a Brand. I ensure the technical feasibility of
+        <span class="coloured">UI/UX</span> designs. I have ability to develop
+        effective and efficient solutions.<br /><br />
+        Current Designation: <span class="coloured">Software Engineer</span> at
+        <span class="coloured">Paytm</span>.
+      </div>
+      <div id="contact">
+        <div class="title">Ok, Let's create something great.</div>
+        If you have some cool project to work on, feel free to Ping Me.<br /><br />
+        Contact Number: <span class="coloured">9999783816</span><br />
+        Email: <span class="coloured">abhayjain139@gmail.com</span>
+      </div>
+      <div class="image" id="image"><img src="user.jpg" /></div>
+    </section>
+    <footer>
+      <a href="https://www.linkedin.com/in/abhayjain13/">LinkedIn</a>
+      <a href="https://www.facebook.com/abhayjain139">Facebook</a>
+      <a href="https://www.instagram.com/abhayjain13/">Instagram</a>
+    </footer>
+  </body>
+  <script>
+    let active = "home";
+    (function() {
+      document.getElementById(active).style.display = "block";
+      document.getElementById("image").style.display = "block";
+    })();
+    function display(id) {
+      document.getElementById(active).style.display = "none";
+      active = id;
+      document.getElementById(active).style.display = "block";
+    }
+  </script>
+</html>
+
+<!-- 
+  TODO 
+    - Add Work 
+    - Add Blog
+    - Add Animations
+-->

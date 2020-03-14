@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto Mono Light"), local("RobotoMono-Light"),
+    url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjDgiWqxf7-pAVU_.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto Mono Medium"), local("RobotoMono-Medium"),
+    url(https://fonts.gstatic.com/s/robotomono/v7/L0xkDF4xlVMF-BfR8bXMIjC4iGqxf7-pAVU_.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  width: 1280px;
+  min-width: 1280px;
+  height: 100vh;
+  margin: auto;
+  font-size: 20px;
+  color: #27373e;
+  animation: loading 0.8s infinite linear;
+}
+
+/* Header CSS START */
+header {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header > div:first-child {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+header > div:first-child > span {
+  color: #e96e35;
+}
+
+header > div:last-child {
+  font-size: 20px;
+}
+
+header > div:last-child > span {
+  margin-right: 50px;
+}
+
+header > div:last-child > span:last-child {
+  margin-right: 0;
+}
+
+header > div:last-child > span:hover {
+  font-weight: 500;
+  color: #e96e35;
+  border-bottom: 2px solid #e96e35;
+}
+/* Header CSS START */
+
+/* Section CSS START */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 620px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.coloured {
+  font-weight: 500;
+  color: #e96e35;
+}
+
+section > div {
+  width: 550px;
+  display: none;
+}
+
+section > .image {
+  width: 450px;
+  max-height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.title {
+  color: #e96e35;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section > .image > img {
+  width: 100%;
+  position: relative;
+}
+/* Section CSS END */
+
+/* Footer CSS START */
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 654px;
+  margin: 0 auto;
+}
+
+footer > a {
+  color: #27373e;
+  text-decoration: none;
+}
+
+footer > a:hover {
+  color: #e96e35;
+  border-bottom: 2px solid #e96e35;
+}
+/* Footer CSS END */
+
+/* Media Query START */
+
+@media only screen and (max-width: 700px) {
+  body {
+    width: 320px;
+    min-width: 320px;
+    height: auto;
+    padding: 4%;
+  }
+
+  header {
+    display: block;
+    padding: 0;
+  }
+
+  header > div:first-child {
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  header > div:last-child {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  header > div:last-child > span {
+    min-width: 77px;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    line-height: 1.6;
+    height: auto;
+  }
+
+  section > div {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  section > .image {
+    margin: 4% 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 4%;
+    padding-top: 4%;
+    border-top: 1px solid #e96e35;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Media Query END */
