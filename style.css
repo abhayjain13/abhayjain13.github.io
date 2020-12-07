@@ -161,7 +161,7 @@ footer > a:hover {
   }
 
   header > div:last-child > span {
-    min-width: 77px;
+    min-width: max-content;
   }
 
   section {
