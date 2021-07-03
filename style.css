@@ -58,6 +58,7 @@ header > div:last-child {
 
 header > div:last-child > span {
   margin-right: 50px;
+  cursor: pointer;
 }
 
 header > div:last-child > span:last-child {
@@ -131,6 +132,7 @@ footer > a {
 footer > a:hover {
   color: #e96e35;
   border-bottom: 2px solid #e96e35;
+  cursor: pointer;
 }
 /* Footer CSS END */
 
