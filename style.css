@@ -44,6 +44,7 @@ header {
 }
 
 header > div:first-child {
+  cursor: pointer;
   font-weight: 500;
   font-size: 36px;
 }
